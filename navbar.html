@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Binti Kahawa</title>
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="navbarC">
+		<a href="" class="logoC">Binti</a>
+		<ul class="navC">
+			<li><a href="#home" onclick="home(event)">Home</a></li>
+			<li><a href="#about" onclick="about(event)">About</a></li>
+			<li><a href="#projects" onclick="projects(event)">Projects</a></li>
+			<li><a href="#gallery" onclick="gallery(event)">Gallery</a></li>
+			<li><a href="#contact" onclick="contact(event)">Contact</a></li>
+
+		</ul>
+	</div>
+	<div class="banner-areaC" id="home">
+
+	</div>
+	<div style="display: none;" id="about">
+		<div class="about-areaC">
+			<div class="text-partC">
+				<h1>About Area</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Percipitur astris. Affecta intellegamus labores, interesset sapiens doloris manilium, reiciendis aptior reliquerunt disputando nullo detraxit. Clamat manum penitus summa fidem idque difficilem abducat, comprehenderit possint ostendit uti habendus torquatos faciunt num depravare metum, saluto maximo provocatus summis electis praetulerit. Reliquisti, legemus viveremus acuti seditiones, turma, titillaret adhibenda neglexerit adversantur atqui tradere exeamus, fortitudinem interrogare numen geometriaque legendum inculta philosophi ignota eveniet incidant, macedonum concedo, nudus ullam angusti suis philosophia studiis, antipatrum dixi.</p>
+			</div>
+		</div>
+	</div>
+	<div style="display: none;" id="projects">
+		<div class="projects-areaC">
+			<div class="text-partC">
+				<h1>Projects Area</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Percipitur astris. Affecta intellegamus labores, interesset sapiens doloris manilium, reiciendis aptior reliquerunt disputando nullo detraxit. Clamat manum penitus summa fidem idque difficilem abducat, comprehenderit possint ostendit uti habendus torquatos faciunt num depravare metum, saluto maximo provocatus summis electis praetulerit. Reliquisti, legemus viveremus acuti seditiones, turma, titillaret adhibenda neglexerit adversantur atqui tradere exeamus, fortitudinem interrogare numen geometriaque legendum inculta philosophi ignota eveniet incidant, macedonum concedo, nudus ullam angusti suis philosophia studiis, antipatrum dixi.</p>
+			</div>
+		</div>
+	</div>
+	<div style="display: none;" id="gallery">
+		<div class="gallery-areaC">
+			<div class="text-partC">
+				<h1>Gallery Area</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Percipitur astris. Affecta intellegamus labores, interesset sapiens doloris manilium, reiciendis aptior reliquerunt disputando nullo detraxit. Clamat manum penitus summa fidem idque difficilem abducat, comprehenderit possint ostendit uti habendus torquatos faciunt num depravare metum, saluto maximo provocatus summis electis praetulerit. Reliquisti, legemus viveremus acuti seditiones, turma, titillaret adhibenda neglexerit adversantur atqui tradere exeamus, fortitudinem interrogare numen geometriaque legendum inculta philosophi ignota eveniet incidant, macedonum concedo, nudus ullam angusti suis philosophia studiis, antipatrum dixi.</p>
+			</div>
+		</div>
+	</div>
+	<div style="display: none;" id="contact">
+		<div class="contact-areaC">
+			<div class="text-partC">
+				<h1>Contact Area</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Percipitur astris. Affecta intellegamus labores, interesset sapiens doloris manilium, reiciendis aptior reliquerunt disputando nullo detraxit. Clamat manum penitus summa fidem idque difficilem abducat, comprehenderit possint ostendit uti habendus torquatos faciunt num depravare metum, saluto maximo provocatus summis electis praetulerit. Reliquisti, legemus viveremus acuti seditiones, turma, titillaret adhibenda neglexerit adversantur atqui tradere exeamus, fortitudinem interrogare numen geometriaque legendum inculta philosophi ignota eveniet incidant, macedonum concedo, nudus ullam angusti suis philosophia studiis, antipatrum dixi.</p>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+
+		function home(event){
+			event.preventDefault()
+			document.getElementById("about").style.display = "none"
+			document.getElementById("projects").style.display = "none"
+			document.getElementById("gallery").style.display = "none"
+			document.getElementById("contact").style.display = "none"
+		}
+
+		function about(event){
+			event.preventDefault()
+			if(document.getElementById("about").style.display == "none"){
+				document.getElementById("about").style.display = "block";
+				
+
+			}else {
+				document.getElementById("about").style.display = "none";
+			}
+		}
+
+		function projects(event){
+			event.preventDefault()
+			if(document.getElementById("projects").style.display == "none"){
+				document.getElementById("projects").style.display = "block";
+
+				
+			}else {
+				document.getElementById("projects").style.display = "none";
+
+			}
+		}
+
+		function gallery(event){
+			event.preventDefault()
+			if(document.getElementById("gallery").style.display == "none"){
+				document.getElementById("gallery").style.display = "block";
+				
+			}else {
+				document.getElementById("gallery").style.display = "none";
+			}
+		}
+
+		function contact(event){
+			event.preventDefault()
+			if(document.getElementById("contact").style.display == "none"){
+				document.getElementById("contact").style.display = "block";
+				
+			}else {
+				document.getElementById("contact").style.display = "none";
+			}
+		}
+	</script>
+</body>
+</html>
