@@ -27,25 +27,23 @@ const subNav = () => {
 	const gallery = document.querySelector("#gal")
 	const subGallery = document.querySelector(".gallery")
 
+	let checker = 0
 	about.addEventListener("mouseover", ()=>{
 			subAbout.classList.toggle("toggle-about")
-		
+			checker = 1
 	})
+
+	subAbout.addEventListener("mouseover", ()=>{
+		subAbout.classList.toggle("toggle-about")
+	})
+
 	about.addEventListener("mouseout", ()=>{
 			
 			subAbout.classList.toggle("about")
 		
 	})
 
-	projects.addEventListener("mouseover", ()=>{
-			subProjects.classList.toggle("toggle-projects")
-		
-	})
-	projects.addEventListener("mouseout", ()=>{
-			
-			subProjects.classList.toggle("gallery")
-		
-	})
+	
 
 	gallery.addEventListener("mouseover", ()=>{
 			subGallery.classList.toggle("toggle-gallery")
@@ -57,5 +55,28 @@ const subNav = () => {
 		
 	})
 }
+
+const ourStory = () => {
+	const ourStory = document.querySelector("#ourStry")
+	const subOurStory = document.querySelector(".ourStory")
+	let checker = 0
+	ourStory.addEventListener("mouseover", ()=>{
+			subOurStory.classList.toggle("toggle-ourStory")
+			checker = 1
+	})
+
+	subOurStory.addEventListener("mouseover", ()=>{
+		subOurStory.classList.toggle("toggle-ourStory")
+	})
+
+	ourStory.addEventListener("mouseout", ()=>{
+			
+			subOurStory.classList.toggle("ourStory")
+		
+	})
+
+}
+
 subNav();
+ourStory();
 navSlideC2();

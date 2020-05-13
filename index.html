@@ -19,68 +19,7 @@
 	<link rel="stylesheet" type="text/css" href="styles2.css">
 
 	<style type="text/css">
-		.about {
-			position: absolute;
-			width: 88%;
-			top: 205px;
-			left: 6%;
-			right: 6%;
-			z-index: 1;
-			height: 500px;
-			
-			background:green;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			transform: translateX(-120%);
-			transition: transform 1s ease-in;
-			}
 
-		.toggle-about {
-			transform: translateX(0%);
-		}
-
-		.projects {
-			position: absolute;
-			width: 88%;
-			top: 205px;
-			left: 6%;
-			right: 6%;
-			z-index: 1;
-			height: 500px;
-			
-			background:green;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			transform: translateX(-120%);
-			transition: transform 1s ease-in;
-			}
-
-		.toggle-projects {
-			transform: translateX(0%);
-		}
-
-		.gallery {
-			position: absolute;
-			width: 88%;
-			top: 205px;
-			left: 6%;
-			right: 6%;
-			z-index: 1;
-			height: 500px;
-			
-			background:green;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			transform: translateX(-120%);
-			transition: transform 1s ease-in;
-			}
-
-		.toggle-gallery {
-			transform: translateX(0%);
-		}
 	</style>
 </head>
 <body style="overflow-x: hidden; background-image: url(images/nav-background4.jpg); background-attachment: fixed; background-size: cover; background-repeat: no-repeat;">
@@ -91,20 +30,31 @@
 				<h1>Binti Kahawa</h1>
 			</div>
 			<nav>
+				<!--
 				<div class="logoC2">
 					<h4>Binti Kahawa</h4>
-				</div>
+				</div> -->
 				<ul class="nav-linksC2">
 					<li>
 						<a href="" >Home</a>
 					</li>
-					<li id="abt">
+					<li  id="abt">
 						<a href="">About</a>
 					</li>
+					<li id="ourStry">
+						<a href="">Our Story</a>
+					</li>
+					<li>
+						<a href="">What we do</a>
+					</li>
+					<li>
+						<a href="">Work with us</a>
+					</li>
+					<!--
 					<li id="prj">
 						<a href="">Projects</a>
-					</li>
-					<li id="gal">
+					</li> -->
+					<li   id="gal">
 						<a href="">Gallery</a>
 					</li>
 				</ul>
@@ -297,13 +247,58 @@
 	</footer>
 
 
-	<div class="container-fluid" align="center" style="width: 100%;">
+	<div class="container-fluid" align="center" style="width: 100%; padding:0">
 		<div class="about" id="about">
-			<h1>About session</h1>
+			<div class="row">
+				<div class="col-md-6 aboutUs">
+					<h3>About Us</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pueri omne dolore ceramico electram varias. Vexetur nostras apud</p>
+					<a href=""><button class="btn btn-primary">Learn More</button></a>
+				</div>
+				<div class="col-md-3 mission">
+					<ul>
+						<li>
+							<a href="">Mission</a>
+						</li>
+						<li>
+							<a href="">Vision</a>
+						</li>
+						<li>
+							<a href="">Our Team</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3 links mission">
+					<ul>
+						<li>
+							<a href="">Mission</a>
+						</li>
+						<li>
+							<a href="">Vision</a>
+						</li>
+						<li>
+							<a href="">Our Team</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="container-fluid" align="center" style="width: 100%;">
-		<div class="projectsNav" id="projects">
+
+
+	<div class="container-fluid ourStory" >
+		<div class="ourStoryContent" id="ourStory" align="left">
+			<h1>Our story</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dissident contentus efficeretur optimus scribentur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dissident contentus efficeretur optimus scribentur </p>
+		</div>
+		<div align="left" style="width: 100%; padding-left:40px">
+			<a href=""><button class="btn btn-primary">Read More</button></a>
+		</div>
+	</div>
+
+
+	<div class="container-fluid" align="left" style="width: 100%;">
+		<div class="projectsNav" id="projectsNav">
 			<h1>Projects session</h1>
 		</div>
 	</div>

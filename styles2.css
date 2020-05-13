@@ -1,3 +1,149 @@
+
+.about {
+	position: absolute;
+	width: 88%;
+	top: 205px;
+	left: 6%;
+	right:6%;
+	z-index: 1;
+	height: 500px;
+
+	
+	background:#75ea75;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transform: translateX(-120%);
+	transition: transform 1s ease-in;
+	}
+
+.toggle-about {
+	transform: translateX(0%);
+	transition: transform 1s ease-in-out;
+}
+
+.aboutUs {
+	padding:40px;
+	padding-top: 60px;
+	text-align: left;
+}
+
+.aboutUs h3 {
+	color: #e13839;
+	font-size: 40px;
+	text-transform: uppercase;
+	border-bottom: 1px solid black;
+}
+.mission {
+	padding:40px;
+}
+
+.mission ul {
+	list-style: none;
+}
+.mission li {
+	padding:20px;
+	border-bottom: 2px solid white;
+	text-align: left;
+}
+
+.mission a {
+	color: black;
+}
+.links {
+	padding:40px;
+}
+
+.ourStory {
+	position: absolute;
+	width: 88%;
+	top: 205px;
+	left: 6%;
+	right:6%;
+	z-index: 1;
+	height: 500px;
+
+	
+	background:#75ea75;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transform: translateX(-120%);
+	transition: transform 1s ease-in;
+	}
+
+.toggle-ourStory {
+	transform: translateX(0%);
+	transition: transform 1s ease-in-out;
+}
+.ourStoryContent{
+	padding:45px;
+	padding-bottom: 20px;
+	
+}
+.ourStoryContent h1 {
+	width: 100%;
+	color: #e13839;
+	font-size: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	
+}
+.ourStoryContent h1:before {
+	content: "I";
+	color: green;
+	font-size: 40px;
+}
+
+.ourStoryContent p {
+	line-height: 40px;
+	font-size: 24px;
+
+}
+.projectsNav {
+	position: absolute;
+	width: 88%;
+	top: 205px;
+	left: 6%;
+	right: 6%;
+	z-index: 1;
+	height: 500px;
+	
+	background:green;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transform: translateX(-120%);
+	transition: transform 1s ease-in;
+	}
+
+.toggle-projects {
+	transform: translateX(0%);
+}
+
+.gallery {
+	position: absolute;
+	width: 88%;
+	top: 205px;
+	left: 6%;
+	right: 6%;
+	z-index: 1;
+	height: 500px;
+	
+	background:green;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transform: translateX(-120%);
+	transition: transform 1s ease-in;
+	}
+
+.toggle-gallery {
+	transform: translateX(0%);
+}
+
+
+
 *{
 	margin: 0px;
 	padding:0px;
@@ -56,8 +202,17 @@ nav {
 	display: flex;
 	
 	justify-content: space-around;
-	width: 30%;
+	width: 80%;
 	list-style: none;
+}
+
+.nav-linksC2 li {
+	height: 100%;
+	padding:5px;
+}
+
+.nav-linksC2 li:hover {
+	border-bottom: 2px solid brown;
 }
 
 .nav-linksC2 a {
@@ -66,6 +221,7 @@ nav {
 	letter-spacing: 3px;
 	font-weight:  bold;
 	font-size: 14px;
+	text-transform: uppercase;
 }
 
 .burgerC2 {
