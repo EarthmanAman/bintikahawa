@@ -82,21 +82,6 @@ header .corousel-inner .item {
 }
 
 
-.nav-activeC2 {
-	transform: translateX(0%);
-}
-
-
-@keyframes navLinkFadeC2 {
-	from {
-		opacity: 0;
-		transform: translateX(50px;);
-	}
-	to {
-		opacity: 1;
-		transform: translateX(0px);
-	}
-}
 
 
 .box-areaC2 {
@@ -177,7 +162,7 @@ header .corousel-inner .item {
 }
 
 .single-boxC2:hover {
-	background: #e84393;
+	background: #e13839;
 	color: #fff;
 }
 .read-more {
@@ -221,7 +206,7 @@ header .corousel-inner .item {
 }
 .banner-textC2 {
 	width: 80%;
-	height: 200px;
+	height: 250px;
 	padding:20px;
 }
 
@@ -266,6 +251,129 @@ header .corousel-inner .item {
 
 .card img {
 	height: 300px;
+}
+
+
+.holdingContainer {
+	width: 100%;
+	display: flex;
+	
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+
+
+}
+
+.internalContainer {
+	flex:1;
+	display: flex;
+	flex-direction: column;
+	
+	background:#c1efcc;
+	padding:15px;
+	margin:5px;
+	font-size: 12px;
+	font-family: "Roboto", sans-serif;
+
+	border-radius: 5px;
+}
+.internalContainer img {
+	width: 100%;
+	height: 250px
+}
+
+.internalContainer-text {
+	line-height: 25px;
+}
+
+.internalContainer h1 {
+	font-size: 24px;
+	color: #e13839;
+	text-transform: uppercase;
+}
+
+.internalContainer h1:before{
+	content: "I";
+	font-size: 24px;
+	color: green;
+	margin-right: 10px;
+}
+
+.internalContainer-text h5 {
+	font-size: 15px;
+	margin:5px;
+
+}
+.internalContainer-text h5:before {
+	content: "-";
+	font-size: 24px;
+	font-weight: bold;
+	color: #e13839;
+	margin-right: 5px;
+}
+
+.internalContainer-text h5:after {
+	content: "-";
+	font-size: 24px;
+	font-weight: bold;
+	color: #e13839;
+	margin-left: 5px;
+}
+
+.internalContainer-text p {
+	font-size: 18px;
+	padding:5px;
+}
+.internalContainer2 {
+	
+	background:#c1efcc;
+	padding:30px;
+	font-size: 12px;
+	font-family: "Roboto", sans-serif;
+
+}
+
+.impact2 {
+	background: #f8f9fa;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.read-more {
+	margin:30px;
+	
+}
+
+.read-more button {
+	font-size: 20px; 
+	color: white;
+	font-weight: bold;
+	width: 200px;
+	height: 50px;
+	border:0;
+	border-radius: 5px;
+	background: #e13839;
+}
+
+.read-more button:hover {
+	background: green;
+	transition: 0.5s ease-in;
+}
+
+.banner-read-more button {
+	font-size: 20px; 
+	color: white;
+	font-weight: bold;
+	width: 200px;
+	height: 50px;
+	border:0;
+	border-radius: 5px;
+	background: #e13839;
+}
+.banner-read-more button:hover {
+	background: green;
+	transition: 0.5s ease-in;
 }
 .footer-topC2 {
 	background: #111;
@@ -426,7 +534,7 @@ header .corousel-inner .item {
 		right: 0px;
 		height: 92vh;
 		top: 8vh;
-		background-color: #5d4954;
+		background-color: green;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -458,7 +566,7 @@ header .corousel-inner .item {
 	}
 
 	.impact-title {
-		width: 100%;
+		width: 80%;
 	}
 	.impact-title h1 {
 		font-size: 30px;
@@ -467,11 +575,23 @@ header .corousel-inner .item {
 		font-size: 15px;
 	}
 
+	.banner-textC2 {
+		width: 90%;
+		padding:10px;
+	}
+
 	.banner-textC2 h1 {
 		font-size: 25px;
+		padding:0;
 	}
 	.banner-textC2 p {
-		font-size: 15px;
+		font-size: 20px;
+		padding:0;
+	}
+
+	.holdingContainer {
+		flex-direction: column;
+		width: 85%;
 	}
 }
 
@@ -482,5 +602,21 @@ header .corousel-inner .item {
 
 	.projects-title {
 		width: 90%;
+	}
+}
+
+.nav-activeC2 {
+	transform: translateX(0%);
+}
+
+
+@keyframes navLinkFadeC2 {
+	from {
+		opacity: 0;
+		transform: translateX(50px;);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0px);
 	}
 }
