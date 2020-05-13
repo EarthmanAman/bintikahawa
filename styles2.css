@@ -41,6 +41,8 @@ nav {
 	background-color: green;
 	min-height: 7vh;
 	font-family: "Poppins", san-serif;
+
+	border-radius: 7px;
 }
 
 .logoC2 {
