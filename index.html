@@ -17,6 +17,71 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles2.css">
+
+	<style type="text/css">
+		.about {
+			position: absolute;
+			width: 88%;
+			top: 205px;
+			left: 6%;
+			right: 6%;
+			z-index: 1;
+			height: 500px;
+			
+			background:green;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			transform: translateX(-120%);
+			transition: transform 1s ease-in;
+			}
+
+		.toggle-about {
+			transform: translateX(0%);
+		}
+
+		.projects {
+			position: absolute;
+			width: 88%;
+			top: 205px;
+			left: 6%;
+			right: 6%;
+			z-index: 1;
+			height: 500px;
+			
+			background:green;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			transform: translateX(-120%);
+			transition: transform 1s ease-in;
+			}
+
+		.toggle-projects {
+			transform: translateX(0%);
+		}
+
+		.gallery {
+			position: absolute;
+			width: 88%;
+			top: 205px;
+			left: 6%;
+			right: 6%;
+			z-index: 1;
+			height: 500px;
+			
+			background:green;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			transform: translateX(-120%);
+			transition: transform 1s ease-in;
+			}
+
+		.toggle-gallery {
+			transform: translateX(0%);
+		}
+	</style>
 </head>
 <body style="overflow-x: hidden; background-image: url(images/nav-background4.jpg); background-attachment: fixed; background-size: cover; background-repeat: no-repeat;">
 	<header style="position: relative;">
@@ -31,15 +96,15 @@
 				</div>
 				<ul class="nav-linksC2">
 					<li>
-						<a href="">Home</a>
+						<a href="" >Home</a>
 					</li>
-					<li>
+					<li id="abt">
 						<a href="">About</a>
 					</li>
-					<li>
+					<li id="prj">
 						<a href="">Projects</a>
 					</li>
-					<li>
+					<li id="gal">
 						<a href="">Gallery</a>
 					</li>
 				</ul>
@@ -232,6 +297,22 @@
 	</footer>
 
 
+	<div class="container-fluid" align="center" style="width: 100%;">
+		<div class="about" id="about">
+			<h1>About session</h1>
+		</div>
+	</div>
+	<div class="container-fluid" align="center" style="width: 100%;">
+		<div class="projectsNav" id="projects">
+			<h1>Projects session</h1>
+		</div>
+	</div>
+	<div class="container-fluid" align="center" style="width: 100%;">
+		<div class="gallery" id="gallery">
+			<h1>Gallery session</h1>
+		</div>
+	</div>
+	
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

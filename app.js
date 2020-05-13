@@ -19,4 +19,43 @@ const navSlideC2 = () => {
 
 }
 
+const subNav = () => {
+	const about = document.querySelector("#abt")
+	const subAbout = document.querySelector(".about")
+	const projects = document.querySelector("#prj")
+	const subProjects = document.querySelector(".projectsNav")
+	const gallery = document.querySelector("#gal")
+	const subGallery = document.querySelector(".gallery")
+
+	about.addEventListener("mouseover", ()=>{
+			subAbout.classList.toggle("toggle-about")
+		
+	})
+	about.addEventListener("mouseout", ()=>{
+			
+			subAbout.classList.toggle("about")
+		
+	})
+
+	projects.addEventListener("mouseover", ()=>{
+			subProjects.classList.toggle("toggle-projects")
+		
+	})
+	projects.addEventListener("mouseout", ()=>{
+			
+			subProjects.classList.toggle("gallery")
+		
+	})
+
+	gallery.addEventListener("mouseover", ()=>{
+			subGallery.classList.toggle("toggle-gallery")
+		
+	})
+	gallery.addEventListener("mouseout", ()=>{
+			
+			subGallery.classList.toggle("gallery")
+		
+	})
+}
+subNav();
 navSlideC2();
