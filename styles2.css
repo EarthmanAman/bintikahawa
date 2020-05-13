@@ -660,13 +660,6 @@ header .corousel-inner .item {
 }
 
 
-@media screen and (max-width: 1024px){
-	.nav-linksC2 {
-		width: 50%;
-	}
-
-
-}
 
 
 @media screen and (max-width: 768px){
