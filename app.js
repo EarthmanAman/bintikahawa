@@ -2,6 +2,7 @@ const navSlideC2 = () => {
 	const burger = document.querySelector(".burgerC2");
 	const nav = document.querySelector(".nav-linksC2");
 	const navLinks = document.querySelectorAll(".nav-linksC2 li");
+
 	burger.addEventListener("click", ()=>{
 		nav.classList.toggle("nav-activeC2");
 
