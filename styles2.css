@@ -100,6 +100,42 @@
 	font-size: 24px;
 
 }
+
+.whatWeDo {
+	position: absolute;
+	width: 88%;
+	top: 205px;
+	left: 6%;
+	right:6%;
+	z-index: 1;
+	height: 500px;
+
+	
+	background:#75ea75;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transform: translateX(-120%);
+	transition: transform 1s ease-in;
+	}
+
+.toggle-whatWeDo {
+	transform: translateX(0%);
+	transition: transform 1s ease-in-out;
+}
+
+.whatWeDo {
+	padding:40px;
+	padding-top: 60px;
+	text-align: left;
+}
+
+.whatWeDo h3 {
+	color: #e13839;
+	font-size: 40px;
+	text-transform: uppercase;
+	border-bottom: 1px solid black;
+}
 .projectsNav {
 	position: absolute;
 	width: 88%;
@@ -115,8 +151,24 @@
 	align-items: center;
 	transform: translateX(-120%);
 	transition: transform 1s ease-in;
-	}
+}
 
+
+.whatWeDo ul {
+	list-style: none;
+}
+.whatWeDo li {
+	padding:20px;
+	border-bottom: 2px solid white;
+	text-align: left;
+}
+
+.whatWeDo a {
+	color: black;
+}
+.links {
+	padding:40px;
+}
 .toggle-projects {
 	transform: translateX(0%);
 }
@@ -192,6 +244,7 @@ nav {
 }
 
 .logoC2 {
+	display: none;
 	color: rgb(226,226, 226);
 	text-transform: uppercase;
 	letter-spacing: 5px;
@@ -693,7 +746,12 @@ header .corousel-inner .item {
 		transform: translateX(120%);
 		transition: transform 0.5s ease-in;
 	}
-
+	.logoC2 {
+		display: block;
+	}
+	.logoC2 h4 {
+		font-size: 15px;
+	}
 	.nav-linksC2 li {
 		opacity: 0;
 	}

@@ -77,6 +77,27 @@ const ourStory = () => {
 
 }
 
+const whatWedo = () => {
+	const whatWeDo = document.querySelector("#wht")
+	const subWhatWeDo = document.querySelector(".whatWeDo")
+	let checker = 0
+	whatWeDo.addEventListener("mouseover", ()=>{
+			subWhatWeDo.classList.toggle("toggle-whatWeDo")
+			checker = 1
+	})
+
+	subWhatWeDo.addEventListener("mouseover", ()=>{
+		subWhatWeDo.classList.toggle("toggle-whatWeDo")
+	})
+
+	whatWeDo.addEventListener("mouseout", ()=>{
+			
+			subWhatWeDo.classList.toggle("whatWeDo")
+		
+	})
+
+}
 subNav();
 ourStory();
+whatWedo();
 navSlideC2();
