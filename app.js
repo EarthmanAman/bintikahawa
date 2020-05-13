@@ -22,11 +22,7 @@ const navSlideC2 = () => {
 const subNav = () => {
 	const about = document.querySelector("#abt")
 	const subAbout = document.querySelector(".about")
-	const projects = document.querySelector("#prj")
-	const subProjects = document.querySelector(".projectsNav")
-	const gallery = document.querySelector("#gal")
-	const subGallery = document.querySelector(".gallery")
-
+	
 	let checker = 0
 	about.addEventListener("mouseover", ()=>{
 			subAbout.classList.toggle("toggle-about")
@@ -40,18 +36,6 @@ const subNav = () => {
 	about.addEventListener("mouseout", ()=>{
 			
 			subAbout.classList.toggle("about")
-		
-	})
-
-	
-
-	gallery.addEventListener("mouseover", ()=>{
-			subGallery.classList.toggle("toggle-gallery")
-		
-	})
-	gallery.addEventListener("mouseout", ()=>{
-			
-			subGallery.classList.toggle("gallery")
 		
 	})
 }
