@@ -130,12 +130,22 @@ ul {
 }
 
 .more-feature-area {
+	background-color: whitesmoke;
+	margin-top: 50px;
 	margin-bottom: 30px;
+	padding-top: 35px;
+	padding-bottom: 70px;
 }
 .more-feature-area img {
+	width: 90%;
 	margin-left: 20px;
 	padding:20px;
 	height: 700px;
+}
+
+.main-title h2 {
+	color: #e13839;
+	text-transform: uppercase;
 }
 .feature-list li{
 	position: relative;
@@ -164,14 +174,14 @@ ul {
 	text-align: center;
 	font-size: 30px;
 	background:white;
-	color: #6ef77c;
+	color: #e13839;
 	border-radius: 50%;
 	border: 2px solid #6ef77c;
 	line-height: 50px
 }
 
 .feature-details h3 {
-	color: #6ef77c;
+	color: #e13839;
 	font-weight: 700;
 	text-transform: uppercase;
 }
@@ -186,6 +196,7 @@ ul {
 
 .leadership {
 	padding:80px, 0px;
+	margin-bottom: 30px;
 }
 
 .leadership .sub-heading {
@@ -204,6 +215,7 @@ ul {
 	min-width: 100px;
 	border: 2px solid brown;
 	border-radius: 50%;
+	margin-bottom: 10px;
 }
 
 .team-man img {
@@ -214,6 +226,9 @@ ul {
 	border-right: 50%;
 }
 
+.team-block {
+	margin-bottom: 70px;
+}
 .team-block h3 {
 	color: #e13839;
 	font-size: 20px;
@@ -289,12 +304,40 @@ ul {
 	-ms-transition: .6s ease;
 }
 
+.download  {
+	background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/nav-background3.jpg);
+	background-position: center;
+	background-attachment: fixed;
+}
+.download h2{
+	color: #e13839;
+}
+
+.download .sub-heading p {
+	color: grey;
+}
 
 
+@media all and (max-width: 768px){
+	.intro-block {
+		width: 88%;
+		left: 6%;
+		right: 6%;
+		height: auto;
+		margin-bottom: 40px;
+		border-bottom: 1px solid brown;
+	}
 
+	.intro-block p {
+		line-height: 40px;
+	}
 
-
-
+	.more-feature-area img {
+		width: 100%;
+		margin-bottom: 30px;
+		border-radius: 30px;
+	}
+}
 
 
 
