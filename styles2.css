@@ -377,7 +377,7 @@ ul {
 
 .gallery-section {
 	background-color: whitesmoke;
-	margin: .5vw;
+	padding:50px;
 	font-size: 0;
 	-ms-flexbox-wrap:wrap;
 	-ms-flexbox-direction:column;
