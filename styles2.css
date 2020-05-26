@@ -436,10 +436,36 @@ ul {
 	}
 }
 
+.ceo-image {
+	width: 100%;
+}
 
+.ceo-image img {
+	width: 100%
+}
 
+.content {
+	padding:20px;
+}
+.content h2 {
+	font-size: 30px;
+	font-weight: 700;
+	color: #e13839;
+	text-transform: uppercase;
+	padding-bottom: 25px;
+}
 
+.content h2:before {
+	content: "I";
+	margin-right: 10px;
+	color: green
+}
 
+.content p {
+	font-size: 18px;
+	color: grey;
+	line-height: 45px;
+}
 
 
 
