@@ -1,4 +1,8 @@
 
+.cr {
+	height: 600px;
+	z-index: -2;
+}
 /* Intro Area */
 .intro-area {
 	position: relative;
@@ -409,6 +413,9 @@ ul {
 	}
 }
 @media all and (max-width: 768px){
+	.cr {
+		height: 300px;
+	}
 	.intro-block {
 		width: 88%;
 		left: 6%;
