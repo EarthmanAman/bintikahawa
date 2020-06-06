@@ -415,6 +415,7 @@ ul {
 @media all and (max-width: 768px){
 	.cr {
 		height: 300px;
+		z-index: -2;
 	}
 	.intro-block {
 		width: 88%;
