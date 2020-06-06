@@ -34,7 +34,7 @@ const subNav = () => {
 	})
 
 	about.addEventListener("mouseout", ()=>{
-			
+			subAbout = document.querySelector(".toggle-about")
 			subAbout.classList.toggle("about")
 		
 	})
@@ -54,7 +54,7 @@ const ourStory = () => {
 	})
 
 	ourStory.addEventListener("mouseout", ()=>{
-			
+			subOurStory = document.querySelector(".toggle-ourStory")
 			subOurStory.classList.toggle("ourStory")
 		
 	})
@@ -75,7 +75,7 @@ const whatWedo = () => {
 	})
 
 	whatWeDo.addEventListener("mouseout", ()=>{
-			
+			subWhatWeDo = document.querySelector(".toggle-whatWeDo")
 			subWhatWeDo.classList.toggle("whatWeDo")
 		
 	})
