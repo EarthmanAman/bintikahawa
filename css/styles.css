@@ -419,6 +419,9 @@ ul {
 	background: grey;
 }
 
+#btn1 {
+	background:brown;
+}
 .tabs button:hover {
 	background: brown;
 }
