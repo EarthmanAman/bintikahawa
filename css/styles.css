@@ -405,6 +405,63 @@ ul {
 	height: auto;
 }
 
+/* Gallery */
+
+.tabs {
+	margin-bottom: 30px;
+}
+
+.tabs button {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+	background: grey;
+}
+
+.tabs button:hover {
+	background: brown;
+}
+.gallery-s {
+	position: relative;
+	display: block;
+	background-color: whitesmoke;
+	padding-top:40px;
+	padding-bottom:40px;
+	height: 1300px;
+}
+
+#one {
+	position: absolute;
+	transform: translateX(0);
+	transition: 0.5s ease-in;
+}
+
+#two {
+	position: absolute;
+	transform: translateX(100%);
+	transition: 0.5s ease-in;
+}
+
+.gallery-desc {
+	width: 80%;
+	padding:5px;
+	margin-bottom: 30px;
+	line-height: 30px;
+}
+.gallery-desc p {
+	letter-spacing: 1.5px;
+}
+.gallery-desc p:before {
+	content: "I";
+	margin-right: 5px;
+
+	font-weight: bold;
+	font-size: 20px;
+	color: green;
+
+
+}
 @media screen and (max-width: 400px){
 	.gallery-section div {
 		margin:0;
