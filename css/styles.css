@@ -416,12 +416,15 @@ ul {
 	padding-bottom: 10px;
 	padding-left: 25px;
 	padding-right: 25px;
+	border: 0px;
 	background: grey;
+	color: ;
 }
 
 #btn1 {
-	background:brown;
+	background:#e13839;
 }
+
 .tabs button:hover {
 	background: brown;
 }
@@ -441,6 +444,12 @@ ul {
 }
 
 #two {
+	position: absolute;
+	transform: translateX(100%);
+	transition: 0.5s ease-in;
+}
+
+#three {
 	position: absolute;
 	transform: translateX(100%);
 	transition: 0.5s ease-in;
@@ -507,10 +516,13 @@ ul {
 
 .ceo-image {
 	width: 100%;
+	height: 500px;
 }
 
 .ceo-image img {
-	width: 100%
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
 }
 
 .content {
@@ -783,7 +795,7 @@ nav {
 	z-index: 3;
 	display: flex;
 	width: 98%;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	background-color: green;
 	min-height: 9vh;
@@ -793,8 +805,9 @@ nav {
 }
 
 .logoC2 {
-	width: 50px;
+	width: 70px;
 	height: 50px;
+	padding-left: 10px;
 }
 
 .logoC2 img {
@@ -1239,25 +1252,9 @@ header .corousel-inner .item {
 	line-height: 75px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px){
-	.md-mb-30C2 {
-		margin-bottom: 30px;
-	}
-}
-
-@media only screen and (max-width: 767px){
-	.sm-mb-30C2 {
-		margin-bottom: 30px;
-	}
-	.footer-topC2 {
-		padding:50px 0;
-	}
-}
 
 
-
-
-@media screen and (max-width: 768px){
+@media screen and (max-width: 968px){
 	html, body {
 		overflow-x: hidden !important;
 	}
@@ -1273,7 +1270,8 @@ header .corousel-inner .item {
 	}
 
 	nav {
-		top: 150px;
+		top: 5px;
+		width: 98%;
 	}
 	.nav-linksC2 {
 		position: absolute;
@@ -1344,6 +1342,14 @@ header .corousel-inner .item {
 	.holdingContainer {
 		flex-direction: column;
 		width: 85%;
+	}
+
+	.ceo-image {
+		height: 300px;
+		margin-bottom: 20px;
+	}
+	.ceo-image img {
+		width: 300px;
 	}
 }
 
