@@ -347,7 +347,7 @@ ul {
 }
 
 .about-us h2:before {
-	content: "I";
+	content: "I";	`
 	margin-right: 10px;
 	color: green;
 }
@@ -410,10 +410,11 @@ ul {
 	height: auto;
 }
 
+
 /* Gallery */
 
 .tabs {
-	margin-bottom: 30px;
+	
 }
 
 .tabs button {
@@ -427,11 +428,11 @@ ul {
 }
 
 #btn1 {
-	background:#e13839;
+	background:antiquewhite;
 }
 
 .tabs button:hover {
-	background: brown;
+	background: antiquewhite;;
 }
 .gallery-s {
 	position: relative;
@@ -439,30 +440,48 @@ ul {
 	background-color: whitesmoke;
 	padding-top:40px;
 	padding-bottom:40px;
-	height: 1300px;
+	height: 1200px;
+}
+
+.gallery-s .main-title h2{
+	padding-top: 3px;
+}
+
+.gallery-s .sub-heading {
+	margin-bottom: 30px;
 }
 
 #one {
 	position: absolute;
 	transform: translateX(0);
 	transition: 0.5s ease-in;
+
+	padding:10px;
+	background: antiquewhite;
 }
 
 #two {
 	position: absolute;
 	transform: translateX(100%);
 	transition: 0.5s ease-in;
+
+	padding:10px;
+	background: antiquewhite;
 }
 
 #three {
 	position: absolute;
 	transform: translateX(100%);
 	transition: 0.5s ease-in;
+
+	padding:10px;
+	background: antiquewhite;
 }
 
 .gallery-desc {
 	width: 80%;
 	padding:5px;
+	padding-top: 20px;
 	margin-bottom: 30px;
 	line-height: 30px;
 }
