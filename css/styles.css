@@ -444,7 +444,7 @@ ul {
 	background-color: whitesmoke;
 	padding-top:40px;
 	padding-bottom:40px;
-	height: 1200px;
+	height: 800px;
 }
 
 .gallery-s .main-title h2{
@@ -597,12 +597,12 @@ ul {
 
 .about {
 	position: absolute;
-	width: 88%;
-	top: 12px;
-	left: 6%;
-	right:6%;
+	width: 98%;
+	top: 70px;
+	left: 1%;
+	right:1%;
 	z-index: 1;
-	height: 500px;
+	height: 100%;
 
 	
 	background:#75ea75;
@@ -615,12 +615,12 @@ ul {
 
 .toggle-about {
 	transform: translateX(0%);
-	transition: transform 1s ease-in-out;
+	transition: transform 1s ease-in;
 }
 
 .aboutUs {
 	padding:40px;
-	padding-top: 60px;
+	padding-top: 50px;
 	text-align: left;
 }
 
@@ -632,6 +632,7 @@ ul {
 }
 .mission {
 	padding:40px;
+	padding-top: 50px;
 }
 
 .mission ul {
@@ -646,15 +647,14 @@ ul {
 .mission a {
 	color: black;
 }
-.links {
-	padding:40px;
-}
+
 
 .ourStory {
 	position: absolute;
-	width: 100%;
-	top: 60px;
-	
+	width: 98%;
+	top: 70px;
+	left: 1%;
+	right: 1%;
 	z-index: 1;
 	height: 500px;
 
@@ -669,7 +669,7 @@ ul {
 
 .toggle-ourStory {
 	transform: translateX(0%);
-	transition: transform 1s ease-in-out;
+	transition: transform 1s ;
 }
 .ourStoryContent{
 	padding:45px;
@@ -698,10 +698,10 @@ ul {
 
 .whatWeDo {
 	position: absolute;
-	width: 88%;
-	top: 10px;
-	left: 6%;
-	right:6%;
+	width: 98%;
+	top: 70px;
+	left: 1%;
+	right:1%;
 	z-index: 1;
 	height: 500px;
 
@@ -716,7 +716,7 @@ ul {
 
 .toggle-whatWeDo {
 	transform: translateX(0%);
-	transition: transform 1s ease-in-out;
+	transition: transform 1s;
 }
 
 .whatWeDo {
@@ -1390,6 +1390,9 @@ header .corousel-inner .item {
 	}
 	.ceo-image img {
 		width: 300px;
+	}
+	.gallery-s {
+		height: 1500px;
 	}
 }
 
